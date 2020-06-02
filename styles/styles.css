@@ -1,15 +1,42 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Rambla;
+}
+
+/* Start Styles landing page*/
+.landing__container {
+    width: 16em;
 }
 .landing {
-    
+    height: 100vh;
+    background-image: url('../assets/img.jpg');
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-size: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.landing__texto {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
+.lading__title {
+    color: white;
     text-align: center;
 }
+.lading__title--name {
+    color: #3B771F;
+}
+.lading__title--btn {
+    background-color: #787676;
+    color: white;
+    margin: 10px auto;
+    display: block;
+    padding: .5em;
+    width: 14em;
+    border-radius: 0.6em;
+    
+}
+/*End Styles landing page*/
