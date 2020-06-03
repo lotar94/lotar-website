@@ -5,9 +5,6 @@
 }
 
 /* Start Styles landing page*/
-.landing__container {
-    width: 16em;
-}
 .landing {
     height: 100vh;
     background-image: url('../assets/img.jpg');
@@ -21,6 +18,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.landing__container {
+    width: 16em;
 }
 .lading__title {
     color: white;
@@ -40,3 +40,40 @@
     
 }
 /*End Styles landing page*/
+
+/*Start Header and Menu Style*/
+.header {
+    display: block;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+.header__menu {
+    
+    background-image: url('../assets/img.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    list-style-type: none;
+    height: 5em;
+    display: flex;
+    align-items: center;
+}
+.header__menu--item {
+    display: inline;
+    margin: 1.5em;
+    cursor: pointer;
+}
+/*End Menu Style*/
+
+
+.home {
+    height: 100vh;
+    
+}
+.home {
+    height: 100vh;
+    
+}
+
