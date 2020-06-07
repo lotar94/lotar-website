@@ -2,34 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lotar Medina Contreras</title>
     <link href="https://fonts.googleapis.com/css2?family=Rambla&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
     <link rel="icon" type="assets/ico" href="./assets/favico.ico" sizes="64x64">
+    <script src="./scripts/index.js"></script>
 </head>
 <body>
     <main>
-        <section class="landing">
+        <section id="lading" class="landing">
             <div class="landing__container">
                 <h3 class="lading__title">Hola, soy 
                     <div class="lading__title--name">Lotar Medina Contreras</div>
                      Desarrollador de Software</h3>
                   
-                    <button class="lading__title--btn">Conoceme</button>
+                    <button class="lading__title--btn" onclick="changeScrollView('home', 'Sobre mi')">Conoceme</button>
             </div>
         </section>
         <header class="header">
             <menu class="header__menu">
-                <li class="header__menu--item">Inicio</li>
-                <li class="header__menu--item">Sobre mi</li>
-                <li class="header__menu--item">Portafolio</li>
-                <li class="header__menu--item">Contacto</li>
+                <li class="header__menu--item" onclick="changeScrollView('lading', 'Inicio')">Inicio</li>
+                <li class="header__menu--item" onclick="changeScrollView('home', 'Sobre mi')">Sobre mi</li>
+                <li class="header__menu--item" onclick="changeScrollView('briefcase', 'Portafolio')">Portafolio</li>
+                <li class="header__menu--item" onclick="changeScrollView('contact', 'Contacto')">Contacto</li>
             </menu>
         </header>
         
-        <section class="home">
+        <section id="home" class="home">
             <div class="home__content">
                 <div class="home__content--photo">
                     <img src="./assets/lotar.jpg" alt="">
@@ -69,6 +69,34 @@
                         Programacion Back-end y Front-end, desarrollando aplicaciones orientadas a la web utilizando persistencia de datos relacionales y no relacionales
                     </p>
                 </div>
+            </div>
+        </section>
+
+        <section id="briefcase" class="briefcase">
+            <div class="briefcase__container">
+                <div class="briefcase__container--project">
+                    
+                </div>
+                <div class="briefcase__container--project">
+                    
+                </div>
+                <div class="briefcase__container--project">
+                    
+                </div>
+                <div class="briefcase__container--project">
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="contact__container">
+                <h2>Contacto</h2>
+                <p>Tienes alguna pregunta o quieres que trabajemos juntos?</p>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <textarea  cols="30" rows="10"></textarea>
+                <button>Enviar</button>
             </div>
         </section>
     </main>

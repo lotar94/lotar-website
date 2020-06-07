@@ -43,9 +43,9 @@
 
 /*Start Header and Menu Style*/
 .header {
-    display: block;
-    position: absolute;
-    z-index: 1000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
     width: 100%;
 }
 .header__menu {
@@ -60,6 +60,7 @@
     margin: 1.5em;
     cursor: pointer;
     color: #fff;
+    opacity: .5;
 }
 /*End  Header and Menu Style*/
 
@@ -104,9 +105,6 @@
     width: 25em;
     margin: auto;
 }
-
-
-
 .home__content .home__content--photo {
     grid-area: 'photo';
     display: flex;
@@ -130,3 +128,45 @@
 }
 /*End Home Styles*/
 
+
+/*Start Briefcase Styles*/
+.briefcase {
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.briefcase__container {
+    height: calc(100vh - 4em);
+    position: relative;
+    top: 4em;
+    display: grid;
+    grid-template-areas: 'title title'
+                         'project1 project2'
+                         'project3 project4';
+    grid-template-rows: 50% 50% ;
+    grid-template-columns: 50% 50%;
+}
+.briefcase__container--project {
+    width: 50%;
+    background-color: #C4C4C4;
+    height: 200px;
+    border-radius: 1em;
+    margin: auto; 
+}
+
+
+/*End Briefcase Styles*/
+
+/*Start Contact Styles*/
+.contact {
+    height: 100vh;
+    background-color: #fff;
+}
+.contact__container {
+    height: calc(100vh - 4em);
+    position: relative;
+    top: 4em;
+}
+
+
+
+/*End Contact Styles*/
