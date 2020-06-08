@@ -62,6 +62,11 @@
     color: #fff;
     opacity: .5;
 }
+.header__menu > a {
+    cursor: pointer;
+    position: absolute;
+    right: 3em;
+}
 /*End  Header and Menu Style*/
 
 /*Start Home Styles*/
@@ -127,6 +132,19 @@
     width: 10em;  
 }
 /*End Home Styles*/
+
+/*Start Home Styles Responsive*/
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+/*End Home Styles Responsive*/
+
+
+
+
 
 
 /*Start Briefcase Styles*/
@@ -216,7 +234,6 @@
     left: 72%;
     outline: none;
     border: 0;
+    cursor: pointer;
 }
-
-
 /*End Contact Styles*/
