@@ -1,22 +1,29 @@
 function changeScrollView (id, page) {
     var elmnt = document.getElementById(id);
+    var menu = document.getElementById('menu');
+    menu.style.right = '-13em';
+    var btn_menu = document.getElementById('header__btn-menu');
+    btn_menu.checked = false;
+
     elmnt.scrollIntoView({block: "start", behavior: "smooth"});
-    // if(id === "home") {
-    //     setTimeout(() => {
-    //         document.getElementById('header').style.visibility = "unset";
-    //     }, 400);
-    // }
 }
 
-// window.addEventListener('scroll', function(e) {
-//     last_known_scroll_position = window.scrollY;
-//     if (last_known_scroll_position < 600) {
-//         document.getElementById('header').style.visibility = "hidden";
-//     } else {
-//         document.getElementById('header').style.visibility = "unset";
-//     }
-//     console.log('cambio=> ', last_known_scroll_position);
+function mifuncino() {
+    var menu = document.getElementById('menu');
+    var btn_menu = document.getElementById('header__btn-menu');
+    if (btn_menu.checked) {
+        menu.style.right = '0em';
+    } else {
+        menu.style.right = '-13em';
+    }
     
-// });
+    
+}
+
+function goToHome() {
+    var elmnt = document.getElementById('home');
+    elmnt.scrollIntoView({block: "start", behavior: "smooth"});
+}
+
 
 

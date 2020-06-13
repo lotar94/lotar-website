@@ -13,7 +13,9 @@
 <body>
     <!--Start header-->
     <header id="header" class="header">
-        <input type="checkbox" id="header__btn-menu">
+        <input type="checkbox" id="header__btn-menu"
+        onclick="mifuncino()"
+        >
         <label for="header__btn-menu">
             <img id="btn-menu"  src="./assets/ui.svg" alt="button burger" hred
             class="header__btn-img"
@@ -43,7 +45,7 @@
             Desarrollador de Software
         </h1>
         <button type="button"
-            onclick="changeScrollView('home', 'Sobre mi')"
+            onclick="goToHome('home', 'Sobre mi')"
             class="lading__title--btn"
         >
             <i class="fa fa-angle-down fa-lg"></i>

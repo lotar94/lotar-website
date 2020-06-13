@@ -72,10 +72,6 @@
         display: none;
     }
 
-    #header__btn-menu:checked ~ .header__menu {
-        right: 0em;   
-    }
-
 
     .landing {
         height: 110vh;
