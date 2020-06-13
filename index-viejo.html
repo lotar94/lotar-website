@@ -1,0 +1,96 @@
+<main>
+    <section id="lading" class="landing">
+        <div class="landing__container">
+            <h3 class="lading__title">Hola, soy 
+                <div class="lading__title--name">Lotar Medina Contreras</div>
+                 Desarrollador de Software</h3>
+              
+                <button class="lading__title--btn" onclick="changeScrollView('home', 'Sobre mi')">Conoceme</button>
+        </div>
+    </section>
+    <header class="header">
+        <menu class="header__menu">
+            <li class="header__menu--item" onclick="changeScrollView('lading', 'Inicio')">Inicio</li>
+            <li class="header__menu--item" onclick="changeScrollView('home', 'Sobre mi')">Sobre mi</li>
+            <li class="header__menu--item" onclick="changeScrollView('briefcase', 'Portafolio')">Portafolio</li>
+            <li class="header__menu--item" onclick="changeScrollView('contact', 'Contacto')">Contacto</li>
+            <a href="https://github.com/lotar94">
+                <img src="./assets/logotipo-github.svg" alt="" hred style="width: 2em; height: 2em;">
+            </a>
+            
+        </menu>
+    </header>
+    
+    <section id="home" class="home">
+        <div class="home__content">
+            <div class="home__content--photo">
+                <img src="./assets/lotar.jpg" alt="">
+            </div>
+            <div class="home__content--info-knowledge">
+                <h2>Mis conocimientos</h2>
+                <div class="home__content--info-knowledge--item">Angular</div>
+                <div class="home__content--info-knowledge--item">nodejs</div>
+                <div class="home__content--info-knowledge--item">css</div>
+                <div class="home__content--info-knowledge--item">sql</div>
+                <div class="home__content--info-knowledge--item">no sql</div>
+                <div class="home__content--info-knowledge--item">javascript</div>
+                <div class="home__content--info-knowledge--item">git</div>
+                <div class="home__content--info-knowledge--item">figma</div>
+                <div class="home__content--info-knowledge--item">python</div>
+                <div class="home__content--info-knowledge--item">flask</div>
+                <div class="home__content--info-knowledge--item">docker</div>
+                <div class="home__content--info-knowledge--item">gcp</div> 
+            </div>
+            <div class="home__content--info-user">
+                <h2>Quien es el?</h3>
+                <p>Soy desarrollador front-end en Everis Center Temuco, CL.
+                Soy un apasionado por la informatica y el desarrollo de software con diversas tecnologias
+                </p>
+            </div>
+            <div class="home__content--info-tools">
+                <h2>Que puedo hacer?</h2>
+                <p>
+                    Toma de requerimientos y estimaciones de tiempo y costo de productos de software
+                </p>
+                <br>
+                <p>
+                    Diseño de interfaces de usuario enfocadas a entregar una experiencia de usuario satisfactoria con diseños minimalistas 
+                </p>
+                <br>
+                <p>
+                    Programacion Back-end y Front-end, desarrollando aplicaciones orientadas a la web utilizando persistencia de datos relacionales y no relacionales
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="briefcase" class="briefcase">
+        <div class="briefcase__container">
+            <div class="briefcase__container--project">
+                
+            </div>
+            <div class="briefcase__container--project">
+                
+            </div>
+            <div class="briefcase__container--project">
+                
+            </div>
+            <div class="briefcase__container--project">
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact__container">
+            <div class="contact__container--form">
+                <h2 class="contact__container--form--h2">Contacto</h2>
+                <p>Tienes alguna pregunta o quieres que trabajemos juntos?</p>
+                <input class="contact__container--form--inputName" type="text" placeholder="Nombre">
+                <input type="email" placeholder="Email">
+                <textarea class="contact__container--form--inputTextArea"  cols="30" rows="10" placeholder="Tu mensaje"></textarea>
+                <button class="contact__container--form--btn">Enviar</button>
+            </div>
+        </div>
+    </section>
+</main>
