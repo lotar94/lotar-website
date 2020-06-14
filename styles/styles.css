@@ -50,7 +50,7 @@
         position: relative;
         right: 1em;
         cursor: pointer;
-        margin-top: .5em;
+        margin-top: .1em;
     }
     .header__menu--item {
         padding: .4em;
@@ -171,7 +171,7 @@
 
     .contact {
         height: 100vh;
-        background: var(--menu-bg-color);
+        background: #cecece;
         text-align: center;
         display: flex;
         align-items: center;
@@ -189,7 +189,7 @@
         padding-top: .5em;
         padding-bottom: .5em;
         padding-left: .8em;
-        background-color: #C4C4C4;
+        background-color: #fff;
         border: 0;
         margin-bottom: 0.2em;
     }
