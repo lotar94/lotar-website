@@ -114,6 +114,9 @@
         border-radius: 1em;
         margin: 0 auto;
         margin-top: 2em;
+        width: 13em;
+        height: 13em;
+        border-radius: 50%;
     }
     .home__title {
         grid-row-start: 3;
@@ -380,7 +383,9 @@
         text-align: center;
     }
     .home__img {
-        border-radius: 50%;;
+        width: 13em;
+        height: 13em;
+        border-radius: 50%;
     }
     .home__title {
         padding: 1em 0;
